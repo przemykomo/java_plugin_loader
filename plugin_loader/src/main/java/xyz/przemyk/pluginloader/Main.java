@@ -14,6 +14,9 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Main {
+
+    // java14 -jar plugin_loader-0.1.jar -Djava.system.class.loader=xyz.przemyk.pluginloader.classloader.CustomClassLoader
+    @SuppressWarnings("SpellCheckingInspection")
     public static void main(String[] args) {
         System.out.println("Main.main() start");
 

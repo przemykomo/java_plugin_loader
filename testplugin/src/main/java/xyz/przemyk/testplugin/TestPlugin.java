@@ -14,6 +14,6 @@ public class TestPlugin implements IPlugin {
 
     @Override
     public void testPrint() {
-        System.out.println("Test print!");
+        System.out.println("Test print1!");
     }
 }

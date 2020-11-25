@@ -13,3 +13,9 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compileOnly project(':plugin_loader')
 }
+
+task copyFile (type: Copy) {
+    dependsOn jar
+    from 'build/libs'
+    into '../run/plugins'
+}
