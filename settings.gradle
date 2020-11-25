@@ -1,0 +1,4 @@
+rootProject.name = 'plugin_loader'
+include 'testplugin'
+include 'plugin_loader'
+
