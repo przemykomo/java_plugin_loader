@@ -1,8 +1,9 @@
 package xyz.przemyk.testplugin;
 
 import xyz.przemyk.pluginloader.IPlugin;
+import xyz.przemyk.pluginloader.Plugin;
 
-@SuppressWarnings("unused")
+@Plugin
 public class TestPlugin implements IPlugin {
     static {
         System.out.println("TestPlugin static");

@@ -17,14 +17,13 @@ public class CustomClassLoader extends URLClassLoader {
 
     public CustomClassLoader(ClassLoader parent) {
         this("classpath", parent);
-        System.out.println("classloading!");
     }
 
     public CustomClassLoader() {
         this(Thread.currentThread().getContextClassLoader());
     }
 
-    public void add(URL url) {
+    void add(URL url) {
         addURL(url);
     }
 
