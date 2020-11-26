@@ -6,7 +6,7 @@
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="xyz.przemyk.pluginloader.*" />
+        <option name="PATTERN" value="xyz.przemyk.pluginloader.events.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

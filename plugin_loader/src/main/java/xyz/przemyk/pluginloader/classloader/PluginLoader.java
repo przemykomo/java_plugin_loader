@@ -11,7 +11,6 @@ import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -19,10 +18,11 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class PluginLoader {
-    public static Set<IPlugin> plugins = new HashSet<>();
 
-    public static void loadPlugins() {
+    public static Set<IPlugin> loadPlugins() {
         loadClasses();
+
+        Set<IPlugin> plugins = new HashSet<>();
 
         Reflections reflections = new Reflections();
         Set<Class<?>> pluginClasses = reflections.getTypesAnnotatedWith(Plugin.class);
@@ -34,6 +34,8 @@ public class PluginLoader {
                 e.printStackTrace();
             }
         }
+
+        return plugins;
     }
 
     private static void loadClasses() {
